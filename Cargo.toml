@@ -1,0 +1,23 @@
+[package]
+name = "brainfuck_jit_opcode"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "interpreter"
+path = "src/interpreter.rs"
+
+[[bin]]
+name = "jit"
+path = "src/jit.rs"
+
+[[bin]]
+name = "ir"
+path = "src/ir.rs"
+
+
+[dependencies]
+dynasm = "1.2.3"
+dynasmrt = "1.2.3"
